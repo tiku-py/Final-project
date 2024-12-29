@@ -12,12 +12,12 @@ def create_connection():
     return conn
 
 
-# Create tables function (Ensure category column is added if it's missing)
+
 def create_tables():
     conn = create_connection()
     cursor = conn.cursor()
 
-    # Ensure meals table has a category column
+
     cursor.execute("PRAGMA table_info(meals);")
     columns = [column["name"] for column in cursor.fetchall()]
     if "category" not in columns:
@@ -64,7 +64,7 @@ def fetch_meal_history(user_id, date=None, category=None):
     conn = create_connection()
     cursor = conn.cursor()
 
-    # Adjusted query to handle the missing 'category' column
+
     query = '''SELECT id, meal_name, category, calories, protein, carbs, fats, date_logged 
                FROM meals WHERE user_id = ?'''
     params = [user_id]
