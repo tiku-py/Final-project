@@ -1,4 +1,4 @@
 Pershendetje !! 
 
 The project is called "meal tracker " it basiclly an app for logging each meal or snack that you eat through out the day , it also count calories proteins carbs ETC, you have the option to count you daily water intake .
-The idea is to help people who are trying to gain weight (like me) or lose it so they can have an easier time counting their calories 
+The idea is to help people who are trying to gain weight (like me) or lose it so they can have an easier time counting their calories , you also need the meal_log.db file for the project to work 
